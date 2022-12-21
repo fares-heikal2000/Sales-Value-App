@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales value</title>
+    <!-- Bootstrap Css File -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <!-- My Css File -->
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+    <div class="head">
+        <div class="container">
+            <h2 class="bg-info text-center py-3 rounded-pill text-white">Sales value App</h2>
+        </div>
+    </div>
+    
+    <div class="main">
+        <div class="container d-flex flex-column">
+            <section class="main m-auto">
+                <form id="myForm" class="mx-5">
+                    <div>
+                        <label for="year">Year :</label>
+                        <input class="my-2 ms-2" type="number" id="year">
+                    </div>
+                    <!-- Enter The Months -->
+                    <div class="h5 mt-4">Enter The Months :</div>
+                    <div>
+                        <label for="title" >1 / January :</label>
+                        <input class="my-2 ms-2" type="number" id="January">
+                    </div>
+                    <div>
+                        <label for="cont">2 / February :</label>
+                        <input class="my-2 ms-2" type="number" id="February">
+                    </div>
+                    <div>
+                        <label for="date">3 / March :</label>
+                        <input class="my-2 ms-2" type="number" id="March">
+                    </div>
+                    <div>
+                        <label for="title">4 / April  :</label>
+                        <input class="my-2 ms-2" type="number" id="January">
+                    </div>
+                    <div>
+                        <label for="cont">5 / May  :</label>
+                        <input class="my-2 ms-2" type="number" id="February">
+                    </div>
+                    <div>
+                        <label for="date">6 / June  :</label>
+                        <input class="my-2 ms-2" type="number" id="March">
+                    </div>
+                    <div>
+                        <label for="title">7 / July  :</label>
+                        <input class="my-2 ms-2" type="number" id="January">
+                    </div>
+                    <div>
+                        <label for="cont">8 / August  :</label>
+                        <input class="my-2 ms-2" type="number" id="February">
+                    </div>
+                    <div>
+                        <label for="date">9 / September  :</label>
+                        <input class="my-2 ms-2" type="number" id="March">
+                    </div>
+                    <div>
+                        <label for="title">10 / October  :</label>
+                        <input class="my-2 ms-2" type="number" id="January">
+                    </div>
+                    <div>
+                        <label for="cont">11 / November  :</label>
+                        <input class="my-2 ms-2" type="number">
+                    </div>
+                    <div>
+                        <label for="date">12 / December  :</label>
+                        <input class="my-2 ms-2" type="number">
+                    </div>
+                    <div class="btns d-flex justify-content-center">
+                        <button type="submit">Submit</button>
+                        <button type="button">Analyse</button>
+                    </div>
+                    
+                </form>
+            </section>
+        </div>
+        
+        <table class="w-100 d-none" id="main-table">
+            <thead>
+                <tr class="main-td">
+                    <td><strong>Year</strong></td>
+                    <td><strong>Jan</strong></td>
+                    <td><strong>Feb</strong></td>
+                    <td><strong>Mar</strong></td>
+                    <td><strong>Apr</strong></td>
+                    <td><strong>May</strong></td>
+                    <td><strong>Jun</strong></td>
+                    <td><strong>July</strong></td>
+                    <td><strong>Aug</strong></td>
+                    <td><strong>Sept</strong></td>
+                    <td><strong>Oct</strong></td>
+                    <td><strong>Nov</strong></td>
+                    <td><strong>Dec</strong></td>
+                    <td><strong>Total</strong></td>
+                    <td><strong>Settings</strong></td>
+                </tr>
+            </thead>
+            
+            <tbody id="showArea">
+
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Pie Charts -->
+    <section class="my-5">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-6">
+                    <canvas id="myChart" width="200" height="100"></canvas>
+                </div> -->
+                <br>
+                <div class="col-6 m-auto" id="canvasPlace">
+                    <canvas id="myChart1" width="200" height="100" class="d-none"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Chart.js Fille -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- chartjs-plugin-datalabels CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.0.0-rc.1/chartjs-plugin-datalabels.min.js" 
+    integrity="sha512-+UYTD5L/bU1sgAfWA0ELK5RlQ811q8wZIocqI7+K0Lhh8yVdIoAMEs96wJAIbgFvzynPm36ZCXtkydxu1cs27w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Bootstrap Js Fille -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- My Js File -->
+    <script src="Js/main.js"></script>
+</body>
+</html>

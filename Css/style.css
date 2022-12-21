@@ -1,0 +1,33 @@
+table {
+    margin-top: 50px;
+}
+.main-td td {
+    max-width: 90px;
+    border: 2px solid gray;
+    text-align: center;
+}
+#showArea td {
+    padding: 5px 10px;
+}
+.main #myForm label {
+    width: 140px;
+}
+.main #myForm .btns {
+    margin-top: 20px;
+}
+.main #myForm button {
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+th, td {
+    background-color: #96D4D4;
+}
